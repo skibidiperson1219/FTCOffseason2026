@@ -56,8 +56,8 @@ public class Shooter {
         flywheelMotorLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         flywheelMotorRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-        flywheelMotorLeft.setDirection(DcMotorSimple.Direction.FORWARD);
-        flywheelMotorRight.setDirection(DcMotorSimple.Direction.REVERSE);
+        flywheelMotorLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+        flywheelMotorRight.setDirection(DcMotorSimple.Direction.FORWARD);
 
         setPIDF(40, 12.64);
         gate.setPosition(gateClosed);

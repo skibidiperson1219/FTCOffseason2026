@@ -35,8 +35,8 @@ public class FlywheelTune extends OpMode{
         flywheelMotorLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         flywheelMotorRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-        flywheelMotorLeft.setDirection(DcMotorSimple.Direction.FORWARD);
-        flywheelMotorRight.setDirection(DcMotorSimple.Direction.REVERSE);
+        flywheelMotorLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+        flywheelMotorRight.setDirection(DcMotorSimple.Direction.FORWARD);
 
         PIDFCoefficients pidfCoefficients = new PIDFCoefficients(P, 0, 0, F);
         flywheelMotorLeft.setPIDFCoefficients(DcMotor.RunMode.RUN_USING_ENCODER, pidfCoefficients);

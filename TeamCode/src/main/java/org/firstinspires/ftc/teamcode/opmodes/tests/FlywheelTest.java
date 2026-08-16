@@ -22,9 +22,8 @@ public class FlywheelTest extends LinearOpMode {
         flywheelMotorLeft.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         flywheelMotorRight.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
-        flywheelMotorLeft.setDirection(DcMotorSimple.Direction.FORWARD);
-        flywheelMotorRight.setDirection(DcMotorSimple.Direction.REVERSE);
-
+        flywheelMotorLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+        flywheelMotorRight.setDirection(DcMotorSimple.Direction.FORWARD);
 
         waitForStart();
         while (opModeIsActive()) {

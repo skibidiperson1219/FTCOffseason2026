@@ -63,8 +63,8 @@ public class ShooterHoodTune extends LinearOpMode {
                 new PIDFCoefficients(P, 0, 0, F)
         );
 
-        flywheelLeft.setDirection(DcMotorSimple.Direction.FORWARD);
-        flywheelRight.setDirection(DcMotorSimple.Direction.REVERSE);
+        flywheelLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+        flywheelRight.setDirection(DcMotorSimple.Direction.FORWARD);
         flywheelLeft.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         flywheelRight.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
